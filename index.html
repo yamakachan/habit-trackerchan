@@ -127,6 +127,11 @@ main{display:grid;grid-template-columns:1fr 280px;gap:32px}
 .cell.empty .d{color:var(--ink-faint)}
 .cell.sun .d{color:var(--sun)}
 .cell.sat .d{color:var(--sat)}
+/* 土日のセル背景うっすら */
+.cell.sun:not(.selected){background:rgba(217,107,107,.06)}
+.cell.sat:not(.selected){background:rgba(107,150,199,.06)}
+.cell.sun:not(.selected):hover{background:rgba(217,107,107,.11)}
+.cell.sat:not(.selected):hover{background:rgba(107,150,199,.11)}
 .cell.today .d{
   position:relative;display:inline-block;margin:0 auto;
   color:var(--accent);font-weight:700;
